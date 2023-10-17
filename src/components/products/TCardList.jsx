@@ -3,7 +3,7 @@ import { TCard } from "./TCard";
 import { GrayFourGrid } from "../grid/GrayFourGrid";
 
 export const TCardList = memo((props) => {
-  console.log("TCardList レンダリング");
+  // console.log("TCardList レンダリング");
   const { cardData, minNum, maxNum, addCart } = props;
   return (
     <GrayFourGrid>

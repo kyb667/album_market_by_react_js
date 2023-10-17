@@ -4,7 +4,7 @@ import { CartContent } from "../providers/CartProvider";
 import { Link } from "react-router-dom";
 
 function DivName() {
-  console.log("render DivName");
+  // console.log("render DivName");
   const { userInfo } = useContext(UserContext);
   return (
     <>
@@ -26,17 +26,17 @@ function DivName() {
 }
 
 function LinkMyPage() {
-  console.log("render LinkMyPage");
+  // console.log("render LinkMyPage");
   return <Link to="/mypage">My Page</Link>;
 }
 
 function DivCartCnt() {
-  console.log("render DivCartCnt");
+  // console.log("render DivCartCnt");
   const { userInfo } = useContext(UserContext);
   const { cart } = useContext(CartContent);
 
-  console.log(userInfo);
-  console.log(cart);
+  // console.log(userInfo);
+  // console.log(cart);
 
   return (
     <>
@@ -52,7 +52,7 @@ function DivCartCnt() {
 }
 
 const LinkCart = memo(({ cnt }) => {
-  console.log("render LinkCart");
+  // console.log("render LinkCart");
   return (
     <>
       <Link to="/mycart">My Cart({cnt})</Link>
@@ -61,7 +61,7 @@ const LinkCart = memo(({ cnt }) => {
 });
 
 export const Nav = () => {
-  console.log("Nav レンダリング");
+  // console.log("Nav レンダリング");
   return (
     <>
       <DivName />

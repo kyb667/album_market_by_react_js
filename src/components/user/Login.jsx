@@ -7,7 +7,7 @@ import { CartContent } from "../providers/CartProvider";
 import { UrlPath } from "../../common/common";
 
 export const Login = () => {
-  console.log("Login レンダリング");
+  // console.log("Login レンダリング");
   const [id, setId] = useState("");
   const [pw, setPw] = useState("");
 
@@ -24,16 +24,16 @@ export const Login = () => {
   const inValidPw = pw === "";
 
   const checkCart = (userId) => {
-    console.log("checkCart");
-    console.log(cart);
+    // console.log("checkCart");
+    // console.log(cart);
     if (userId in cart) {
-      console.log("すでにあります");
+      // console.log("すでにあります");
       return;
     }
 
     var cloned = { ...cart };
     let cloneId = new String(`${userId}`)["0"];
-    console.log(cloneId);
+    // console.log(cloneId);
     cloned[cloneId] = [];
     setCart(cloned);
   };
@@ -53,7 +53,7 @@ export const Login = () => {
         navigate("/");
       })
       .catch((err) => {
-        alert(err);
+        alert(`error : ${JSON.stringify(err)}`);
       });
   };
 

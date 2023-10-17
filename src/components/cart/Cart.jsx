@@ -14,7 +14,7 @@ import {
 } from "@chakra-ui/react";
 
 export const Cart = ({ data }) => {
-  console.log("Cart レンダリング");
+  // console.log("Cart レンダリング");
   return (
     <>
       <Box boxShadow="md" p="6" rounded="md" bg="white">

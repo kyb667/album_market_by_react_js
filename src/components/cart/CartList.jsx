@@ -3,7 +3,7 @@ import { Cart } from "./Cart";
 import { GrayFourGrid } from "../grid/GrayFourGrid";
 
 export const CartList = memo((props) => {
-  console.log("CartList レンダリング");
+  // console.log("CartList レンダリング");
   const { cart } = props;
   // console.log(cart);
   return (
@@ -16,7 +16,7 @@ export const CartList = memo((props) => {
           ))}
         </GrayFourGrid>
       ) : (
-        <div>気になったものがありません</div>
+        <div>気に入ったものがありません</div>
       )}
     </>
   );

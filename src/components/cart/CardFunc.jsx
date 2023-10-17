@@ -1,9 +1,9 @@
 export const addCart = (userInfo, cardInfo, cart, setCart) => {
-  console.log("addCart");
-  console.log(userInfo);
-  console.log(cardInfo);
-  console.log(cart);
-  // console.log(setCart);
+  // console.log("addCart");
+  // console.log(userInfo);
+  // console.log(cardInfo);
+  // console.log(cart);
+  // // console.log(setCart);
   let myCart;
   let userId;
   if (userInfo.length === 0) {
@@ -21,8 +21,8 @@ export const addCart = (userInfo, cardInfo, cart, setCart) => {
       myCart = [];
     }
   }
-  console.log(userId);
-  console.log(myCart);
+  // console.log(userId);
+  // console.log(myCart);
 
   var isValid = myCart.filter((data) => {
     if (data.id === cardInfo.id) {
@@ -30,16 +30,16 @@ export const addCart = (userInfo, cardInfo, cart, setCart) => {
     }
   });
 
-  console.log(isValid);
+  // console.log(isValid);
 
   if (isValid.length === 0) {
     myCart.push(cardInfo);
-    console.log(myCart);
+    // console.log(myCart);
     var cloned = { ...cart };
     let cloneId = new String(`${userId}`)["0"];
-    console.log(cloneId);
+    // console.log(cloneId);
     cloned[cloneId] = myCart;
-    console.log(cloned);
+    // console.log(cloned);
     setCart(cloned);
   } else {
     alert("既に入っています");

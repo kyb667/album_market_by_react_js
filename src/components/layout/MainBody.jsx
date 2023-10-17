@@ -20,7 +20,7 @@ export const MainBody = ({ cardData }) => {
 
   const userId = userInfo.length > 0 ? userInfo[0].id : "0";
 
-  console.log("MainBody レンダリング " + userId);
+  // console.log("MainBody レンダリング " + userId);
 
   return (
     <Routes>

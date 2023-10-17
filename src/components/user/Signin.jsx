@@ -7,7 +7,7 @@ import { UserContext } from "../providers/UserProvider";
 import { CartContent } from "../providers/CartProvider";
 
 export const Signin = () => {
-  console.log("Signin");
+  // console.log("Signin");
   const [id, setId] = useState("");
   const [pw, setPw] = useState("");
   const [name, setName] = useState("");
@@ -33,7 +33,7 @@ export const Signin = () => {
 
     var cloned = { ...cart };
     let cloneId = new String(`${userId}`)["0"];
-    console.log(cloneId);
+    // console.log(cloneId);
     cloned[cloneId] = [];
     setCart(cloned);
   };

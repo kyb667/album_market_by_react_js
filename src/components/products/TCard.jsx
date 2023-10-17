@@ -17,7 +17,7 @@ import { UserContext } from "../providers/UserProvider";
 import { CartContent } from "../providers/CartProvider";
 
 export const TCard = ({ data, minNum, maxNum, addCart }) => {
-  console.log("TCard レンダリング");
+  // console.log("TCard レンダリング");
 
   const context = useContext(UserContext);
 
@@ -45,12 +45,12 @@ export const TCard = ({ data, minNum, maxNum, addCart }) => {
             <Divider />
             <CardFooter>
               <ButtonGroup spacing="2">
-                <Button
+                {/* <Button
                   borderRightRadius="0"
                   onClick={addCart.bind(this, userInfo, data, cart, setCart)}
                 >
                   Buy now
-                </Button>
+                </Button> */}
                 <Button
                   borderRightRadius="0"
                   onClick={addCart.bind(this, userInfo, data, cart, setCart)}
