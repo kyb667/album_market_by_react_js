@@ -39,6 +39,10 @@ export const Signin = () => {
   };
 
   const checkForm = () => {
+    if (isNaN(id)) {
+      alert("IDは数値で入力してください");
+      return;
+    }
     if (inValidId || inValidPw || inValidName) {
       alert("入力してください");
       return;
