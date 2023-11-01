@@ -1,3 +1,6 @@
+### URL
+    https://web-album-market-jvpb2mlofi5vnq.sel5.cloudtype.app/
+
 ### 目的
 - reactを用いて売り場サイトのcart機能を作ってみる
 
