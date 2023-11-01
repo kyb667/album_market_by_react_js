@@ -29,10 +29,7 @@ export const TCard = ({ data, minNum, maxNum, addCart }) => {
 
   return (
     <>
-      {checkFlag &&
-      (userInfo.length > 0
-        ? data.id.toString().includes(userInfo[0].id.toString())
-        : true) ? (
+      {checkFlag ? (
         <Box boxShadow="md" p="6" rounded="md" bg="white">
           <Card border="1px" borderColor="gray.200">
             <CardHeader>
